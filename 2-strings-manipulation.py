@@ -15,7 +15,10 @@ Crea una variable llamada "teammate-hobbie".
 Asígnale como valor una string con unos de sus hobbies". 
 """
 # Escribe tu código aquí
-
+hobbie ="Gimnasio";
+name ="Jorge";
+teammate = "Juliana";
+teammate_hobbie = "Correr";
 
 """
 --- Ejercicio 2 Concatenación ---
@@ -23,13 +26,14 @@ Imprime por consola el siguiente mensaje concatenando las variales anteriormente
 "Soy [name] y en mis tiempos libres me gusta [hobbie]"
 """
 # Escribe tu código aquí
-
+print("Soy "+name+ "y en mis tiempos libres me gusta " +hobbie);
 """
 --- Ejercicio 3 f-strings ---
 Imprime por consola el siguiente mensaje usando f-strings para unir las frases de las variales anteriormente declaradas:
 "Ella es [teammate] y en sus tiempos libres le gusta [teammate-hobbie]"
 """
 # Escribe tu código aquí
+print(f"ella es {teammate} y en sus tiempos libres le gusta{teammate_hobbie}")
 
 """
 --- Ejercicio 4 separación por comas ---
@@ -37,6 +41,7 @@ Imprime por consola el siguiente mensaje usando separación por comas para unir 
 "Ella se llama [teammate] y yo me llamo [name]"
 """
 # Escribe tu código aquí
+print("Ella se llama", teammate, "y yo me llamo", name)
 
 """
 --- Ejercicio 5 separación con operador % ---
@@ -44,24 +49,29 @@ Imprime por consola el siguiente mensaje usando separación con el operador % pa
 "Además de programar, nos gusta [hobbie] y [teammate-hobbie]"
 """
 # Escribe tu código aquí
-
+print("Ademas de programar, nos gusta %s y %s" % (hobbie, teammate_hobbie))
 """
 --- Ejercicio 6 input data ---
 Escribe dos variables que reciban por terminal un número cada una
 """
 # Escribe tu código aquí
-
+numero1 = input("Introduce el primer número: ");
+numero2 = input ("Introduce el segundo nñumero: ");
 """
 --- Ejercicio 7 ---
 Imprime por consola el resultado de la suma de los dos número obtenidos anteriormente y 
 en un comentario de línea escribe lo que sucede. ¡Recuerda que puedes usar type() para indagar mas!
 """
 # Escribe tu código aquí
+print(numero1 + numero2)
 # Escribe tu análisis aquí
-
+#input siempre devuelve un string, aunque escribas numeros y lo que hace es concatenar los dos string y por eso si pongo 1 y 2 me sale 12
 """
 --- Ejercicio 6 conversión de strings ---
 Transforma los valores recibidos en el ejercicio 6 a números
 Imprime por consola el resultado de la suma de los dos número obtenidos anteriormente
 """
 # Escribe tu código aquí
+numero1_int = int(numero1);
+numero2_int = int(numero2);
+print(f"{numero1_int + numero2_int} Tipo de dato: {type(numero1_int)} Tipo de dato: {type(numero2_int)}")
